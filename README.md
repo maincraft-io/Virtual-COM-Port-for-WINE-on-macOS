@@ -49,6 +49,7 @@ This example is based on CP2104 from Silicon Labs running on macOS 15.1 (Apple S
    ```
    HKEY_LOCAL_MACHINE/Software/Wine/Ports
    ```
+![wine regedit](images/regedit.png)
 
 10. Create a new String Value in this section:
     - Name: `com5`
