@@ -1,5 +1,5 @@
 
-# Virtual-COM-Port-for-WINE-on-macOS
+# Virtual-Serial-COM-Port-for-WINE-on-macOS
 Guide to configuring a Virtual COM Port using socat (linked with CP2104) on macOS and utilizing it within WINE for development and testing purposes. Compatible with Apple Silicon.
 
 This example is based on CP2104 from Silicon Labs running on macOS 15.1 (Apple Silicon M4 Max).
