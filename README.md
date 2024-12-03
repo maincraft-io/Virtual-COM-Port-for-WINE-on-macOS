@@ -56,3 +56,4 @@ This example is based on CP2104 from Silicon Labs running on macOS 15.1 (Apple S
     - Value: `/tmp/virtualport`
 
 11. Exit the Registry Editor, launch your Wine application, select `COM5`, and start using it!
+![wine FarDriver.exe](images/fd.png)
