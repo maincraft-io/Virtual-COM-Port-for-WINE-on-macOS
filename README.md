@@ -57,3 +57,7 @@ This example is based on CP2104 from Silicon Labs running on macOS 15.1 (Apple S
 
 11. Exit the Registry Editor, launch your Wine application, select `COM5`, and start using it!
 ![wine FarDriver.exe](images/fd.png)
+
+## Keywords
+
+#VirtualCOMPort #WINE #macOS #AppleSilicon #M1 #M2 #M3 #M4 #CP2104 #TTL #COM #socat #SerialCommunication #USBtoUART #WineDevelopment #macOSDevelopment #VirtualPortSetup #SiliconLabs #SerialPort #UART #RS232 #WineCOMPort #USBDriver
