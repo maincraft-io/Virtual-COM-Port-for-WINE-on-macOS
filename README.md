@@ -23,9 +23,9 @@ This example is based on CP2104 from Silicon Labs running on macOS 15.1 (Apple S
 
 4. Create a virtual COM port using the path from Step 3 by executing the following `socat` command:
    ```bash
-   socat -d -d \
-   PTY,link=/tmp/virtualport,raw,echo=0,wait-slave,cfmakeraw,ispeed=19200,ospeed=19200,cs8,clocal \
-   FILE:/dev/cu.SLAB_USBtoUART,raw,echo=0,cfmakeraw,ispeed=19200,ospeed=19200,cs8,clocal
+    socat -d -d \
+    PTY,link=/tmp/virtualport,raw,echo=0,ispeed=19200,ospeed=19200,cs8,clocal,ignbrk,cread \
+    FILE:/dev/cu.SLAB_USBtoUART,raw,echo=0,ispeed=19200,ospeed=19200,cs8,clocal,ignbrk,cread
    ```
    > Note: The `baudrate` in this example is set to `19200`. You can adjust it as per your requirements.
 
@@ -57,6 +57,12 @@ This example is based on CP2104 from Silicon Labs running on macOS 15.1 (Apple S
 
 11. Exit the Registry Editor, launch your Wine application, select `COM5`, and start using it!
 ![wine FarDriver.exe](images/fd.png)
+
+Extra. Ready only VIRTUAL PORT (Only recieve)
+socat -d -d \
+PTY,link=/tmp/virtualport,raw,echo=0,wait-slave,cfmakeraw,ispeed=19200,ospeed=19200,cs8,clocal \
+FILE:/dev/cu.SLAB_USBtoUART,raw,echo=0,cfmakeraw,ispeed=19200,ospeed=19200,cs8,clocal,rdonly
+
 
 ## Keywords
 
