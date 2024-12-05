@@ -63,8 +63,7 @@ This example is based on CP2104 from Silicon Labs running on macOS 15.1 (Apple S
 
 To enable cross-communication, where you can send data to `virtualport_client` and have it received by `virtualport`, use the following `socat` command:
 ```bash
-socat -d -d PTY,link=/tmp/virtualport,raw,echo=0,ispeed=19200,ospeed=19200,cs8,clocal,ignbrk,cread \\
-PTY,link=/tmp/virtualport_client,raw,echo=0,ispeed=19200,ospeed=19200,cs8,clocal,ignbrk,cread
+socat -d -d PTY,link=/tmp/virtualport,raw,echo=0,ispeed=19200,ospeed=19200,cs8,clocal,ignbrk,cread PTY,link=/tmp/virtualport_client,raw,echo=0,ispeed=19200,ospeed=19200,cs8,clocal,ignbrk,cread
 ```
 
 ## Keywords
